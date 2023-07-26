@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tailwindcss</title>
+    <link rel="stylesheet" href="./style.css">
+      <script src="https://cdn.tailwindcss.com"></script>
+      <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+      <script src="https://kit.fontawesome.com/b3e446a103.js" crossorigin="anonymous"></script>
+      <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+       <style type="text/tailwindcss">
+        @layer utilities {
+          .content-auto {
+            content-visibility: auto;
+          }
+        }
+      </style>
+</head>
+<body>
+    <div class=" min-h-screen mx-auto ">
+      <!-- bg-[url(https://media.istockphoto.com/id/1140477807/photo/black-background-and-gray-background-white-and-gradient-and-light-gray-white-surface-with.webp?b=1&s=170667a&w=0&k=20&c=vAuqp2P0dp-j1Pb4z0t7heRJQynpFo34b2BDJZjwHpk=)] bg-center bg-cover -->
+        <!-- navbar -->
+        <nav class="p-5 bg-white shadow md:flex md:items-center md:justify-between">
+            <div>
+                <span class="text-3xl font-[poppins]">
+                    My Clothing
+                    <img class="h-10 inline" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVzg59XB74ljlpidx5dQ29O9M8J2norxRHFA&usqp=CAU" alt="">
+                </span>
+            </div>
+            
+            <ul class="md:flex md:items-center">
+                <li class="mx-4 my-6 md:my-0">
+                    <a href="home"class="text-xl hover:text-red-500">Home</a>
+                </li>
+                <li class="mx-4 my-6  md:my-0">
+                    <a href=""class=" text-xl hover:text-red-500">About</a>
+                </li>
+                <li class="mx-4 my-6  md:my-0">
+                    <a href=""class="text-xl hover:text-red-500 ">Features</a>
+                </li>
+                <li class="mx-4 my-6  md:my-0">
+                    <a href=""class="text-xl hover:text-red-500">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- intro -->
+        <!-- <div class="text-white mt-48 max-w-xl">
+            <h1 class="text-6xl font-semibold  leading-normal">asdfghjkl;<br>lkjhgdwqwertyuik</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est molestiae similique nulla non beatae illum deleniti! </p>
+            <div class="mt-10 ">
+                <a href="" class="bg-green-400 rounded-3xl px-8 py-3 font-medium mr-4 inline-block hover:bg-transparent hover:border-green-400 hover:border">order now</a>
+                <a href=""class="bg-green-400 px-4 py-3 rounded-3xl mr-4">download app</a>
+
+            </div>
+        </div> -->
+       
+          <section id="home">
+            <div class="container py-10 ">
+              <div class=" flex flex-col items-center z-30 md:flex-row">
+              <div class="text-center mb-10 md:text-left md:w-1/2 md:pl-10  md:ml-20">
+                <h1 class="  text-3xl mb-4 md:text-4xl font-bold leading-snug">Fashionable clothing. </h1>
+                <p class="leading-relaxed mb-5 md:w-50">Fashion is part of the daily life which changes all the time, <br> with all the events</p>
+                <button class="bg-red-400 px-9 py-3  rounded-md capitalize  hover:opacity-80 ease-in duration-200">shop now</button>
+              </div>
+              <div class=" md:w-1/2 md:mr-5 mt-10 ">
+                <img class="rounded" src="./images/image4.png " alt="">
+                
+              </div>
+            </div>
+            </div>
+
+          </section>
+          <section id="collections">
+          <div class="text-center mt-8 mb-6">
+            <h1 class=" text-3xl mb-4 md:text-4xl font-bold leading-snug">Our Trending Collections</h1>
+          </div>
+          <div class=" products   ml-10 mr-10">
+              <div class="md:flex mt-10">
+                <div class="row relative ml-8 mr-3">
+                    <img class="img w-72 h-72 hover:scale-105" src="./images/image5.png" alt="">
+                    <h5 class="text-xl absolute top-4 rounded-sm left-4 px-2 text-white font-semibold bg-red-500 ">Sale</h5>
+                    <div class="heart-icon">
+                      <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="rating">
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <p>$99-129</p><p></p>
+                </div>
+                <div class="row relative ml-8 mr-3">
+                  
+                    <img class="img w-72 h-72 hover:scale-105" src="./images/image6.png" alt="">
+                    <h5 class="text-xl absolute top-4 rounded-sm left-4 px-2 text-white font-semibold bg-red-500 ">Sale</h5>
+                    <div class="heart-icon">
+                      <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="rating">
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <p>$99-129</p><p></p>
+                </div>
+                <div class="row relative ml-8 mr-3">
+                  
+                    <img class="img w-72 h-72 hover:scale-105" src="./images/image7.png" alt="">
+                    <h5 class="text-xl absolute top-4 rounded-sm left-4 px-2 text-white font-semibold bg-red-500 ">Sale</h5>
+                    <div class="heart-icon">
+                      <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="rating">
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <p>$99-129</p><p></p>
+                </div>
+                <div class="row relative ml-8 mr-3">
+                
+                    <img class="img w-72 h-72 hover:scale-105" src="./images/image8.png" alt="">
+                    <h5 class="text-xl absolute top-4 rounded-sm left-4 px-2 text-white font-semibold bg-red-500 ">Sale</h5>
+                    <div class="heart-icon">
+                      <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="rating">
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <p>$99-129</p><p></p>
+                </div>
+                <div class="row relative ml-8 mr-3">
+                  
+                  <img class="img w-72 h-72 hover:scale-105 " src="./images/image9.png" alt="">
+                  <h5 class="text-xl absolute top-4 rounded-sm left-4 px-2 text-white font-semibold bg-red-500 ">Sale</h5>
+                  <div class="heart-icon">
+                    <i class="fa-regular fa-heart"></i>
+                  </div>
+                  <div class="rating">
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                  </div>
+                  <p>$99-129</p><p></p>
+              </div>
+              </div>
+              
+              <div class="md:flex mt-10">
+                <div class="row relative ml-8 mr-3">
+                    <img class="img w-72 h-72 hover:scale-110" src="./images/image10.png" alt="">
+                    <h5 class="text-xl absolute top-4 rounded-sm left-4 px-2 text-white font-semibold bg-red-500 ">Sale</h5>
+                    <div class="heart-icon">
+                      <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="rating">
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <p>$99-129</p><p></p>
+                </div>
+                <div class="row relative ml-8 mr-3">
+                  
+                    <img class="img w-72 h-72 hover:scale-105" src="./images/image11.png" alt="">
+                    <h5 class="text-xl absolute top-4 rounded-sm left-4 px-2 text-white font-semibold bg-red-500 ">Sale</h5>
+                    <div class="heart-icon">
+                      <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="rating">
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <p>$99-129</p><p></p>
+                </div>
+                <div class="row relative ml-8 mr-3">
+                  
+                    <img class="img w-72 h-72 hover:scale-105" src="./images/image12.png" alt="">
+                    <h5 class="text-xl absolute top-4 rounded-sm left-4 px-2 text-white font-semibold bg-red-500 ">Sale</h5>
+                    <div class="heart-icon">
+                      <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="rating">
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <p>$99-129</p><p></p>
+                </div>
+                <div class="row relative ml-8 mr-3">
+                
+                    <img class="img w-72 h-72 hover:scale-105" src="./images/image13.png" alt="">
+                    <h5 class="text-xl absolute top-4 rounded-sm left-4 px-2 text-white font-semibold bg-red-500 ">Sale</h5>
+                    <div class="heart-icon">
+                      <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="rating">
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <p>$99-129</p><p></p>
+                </div>
+                <div class="row relative ml-8 mr-3">
+                  
+                  <img class="img w-72 h-72 hover:scale-105" src="./images/image5.png" alt="">
+                  <h5 class="text-xl absolute top-4 rounded-sm left-4 px-2 text-white font-semibold bg-red-500 ">Sale</h5>
+                  <div class="heart-icon">
+                    <i class="fa-regular fa-heart"></i>
+                  </div>
+                  <div class="rating">
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                  </div>
+                  <p>$99-129</p><p></p>
+              </div>
+              </div>
+              </div>
+            
+
+          </section>
+
+        
+    </div>
+</body>
+</html>
